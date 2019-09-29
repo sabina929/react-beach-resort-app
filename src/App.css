@@ -6,10 +6,12 @@
 :root {
   --primaryColor: #5bb6fd;
   --mainWhite: #ffffff;
-  --offWhite: rgb(70, 78, 91);
-  --mainBlack: #2e54a5;
-  --mainGrey: hsl(215, 40%, 28%);
-  --darkGrey: #eaeff6;
+
+  --mainBlue: #2e54a5;
+  --darkBlue: hsl(215, 40%, 28%);
+  --mainGrey: #eaeff6;
+  --darkGrey: rgb(70, 78, 91);
+
   --mainTransition: all 0.3s linear;
   --mainSpacing: 3px;
   --lightShadow: 0px 5px 25px -10px rgba(70, 78, 91, 0.4);
@@ -18,7 +20,7 @@
 /* globals */
 body {
   padding-top: 66px;
-  color: var(--mainGrey);
+  color: var(--darkBlue);
   background: var(--mainWhite);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
@@ -57,7 +59,7 @@ h6 {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--darkGrey);
+  color: var(--mainGrey);
   background: var(--primaryColor);
   padding: 0.4rem 0.9rem;
   border: 3px solid var(--primaryColor);
@@ -98,7 +100,7 @@ h6 {
   left: 0;
   width: 100%;
   padding: 0.75rem 2rem;
-  background: var(--offWhite);
+  background: var(--darkGrey);
   z-index: 1;
 }
 .nav-header {
@@ -138,7 +140,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--mainBlack);
+  color: var(--mainBlue);
 }
 
 .show-nav {
@@ -255,7 +257,7 @@ h6 {
 }
 .service span {
   display: inline-block;
-  color: var(--mainBlack);
+  color: var(--mainBlue);
   font-size: 2.5rem;
   margin-bottom: 1.2rem;
 }
@@ -265,7 +267,7 @@ h6 {
   text-transform: uppercase;
 }
 .services p {
-  color: var(--offWhite);
+  color: var(--darkGrey);
   width: 80%;
   margin: 0 auto;
 }
@@ -363,7 +365,7 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: var(--darkGrey);
+  background: var(--mainGrey);
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
@@ -502,7 +504,7 @@ h6 {
 .size-input {
   width: 40%;
   padding: 0.2rem;
-  border: 1px solid var(--mainBlack);
+  border: 1px solid var(--mainBlue);
   border-radius: 0.3rem;
   margin-right: 0.3rem;
 }
